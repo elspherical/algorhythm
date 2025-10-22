@@ -28,7 +28,7 @@ nltk.download('averaged_perceptron_tagger')
 class VideoToMusicConverter:
     """Generate detailed music recommendations for video frames using BLIP2"""
     
-    def __init__(self, model_name: str = "Salesforce/blip2-flan-t5-xl"):
+    def __init__(self, model_name: str = "Salesforce/blip2-opt-2.7b"):
         # Note: The default is changed to 'base' for maximum lightweightness.
         self.model_name = model_name
         # Check for CUDA availability
@@ -108,11 +108,6 @@ class VideoToMusicConverter:
         frame_count = 0
         extracted_count = 0
         
-        # Get frame rate (FPS) for logging
-        fps = cap.get(cv2.CAP_PROP_FPS)
-        
-        print(f"Video FPS: {fps:.2f}. Extracting 1 frame every {frame_interval} frames ({frame_interval/fps:.2f} seconds).")
-
         while True:
             ret, frame = cap.read()
             if not ret:
@@ -131,68 +126,113 @@ class VideoToMusicConverter:
         cap.release()
         
         print(f"Total frames extracted: {len(frames)} from {frame_count} total frames")
+        print(f"Sampling rate: 1 in every {frame_interval} frames")
         return frames
     
     def generate_music_caption(self, image: np.ndarray) -> str:
         """Generate detailed music recommendation for a single frame"""
+        print("CHECK 0")
         pil_image = Image.fromarray(image)
-        
+        print(pil_image)
+        print("CHECK 1")
         try:
-            # Enhanced prompt structure for better results from the smaller model
-            detailed_music_prompt = (
-                "Create a detailed musical recommendation for this visual scene. "
-                "Describe the perfect background track by specifying:\n"
-                "1. **Genre and Subgenre** (e.g., Synthwave, Baroque Classical)\n"
-                "2. **Instrumentation** (e.g., Analog synthesizers, acoustic guitar, string quartet)\n"
-                "3. **Tempo and Rhythm** (e.g., Fast, driving beat; slow, gentle waltz)\n"
-                "4. **Mood and Emotional Tone** (e.g., Tense and cinematic, peaceful and reflective)\n"
-                "5. **Production Style** (e.g., Electronic, Orchestral, Lo-fi)\n"
-                "The output should be a single, rich, descriptive sentence."
-            )
+            detailed_music_prompt = """Question: Provide a specific genre, 3 instruments, tempo, and mood for the background music of this scene. Answer:"""
             
             music_inputs = self.processor(images=pil_image, text=detailed_music_prompt, return_tensors="pt").to(self.device)
-            
+            print("CHECK 2")
             with torch.no_grad():
                 music_ids = self.model.generate(
                     **music_inputs,
-                    max_new_tokens=120,
-                    num_beams=4,  # Slightly lower beam search for speed on lightweight models
-                    early_stopping=True,
+                    max_new_tokens=50,
+                    num_beams=1,
                     do_sample=True,
                     temperature=0.9,
                     top_p=0.9,
                     repetition_penalty=1.1
                 )
+                print("CHECK 3")
             
             music_caption = self.processor.batch_decode(
                 music_ids, 
                 skip_special_tokens=True
             )[0].strip()
             
-            # Simple cleanup of common unwanted phrases returned by the multimodal model
-            unwanted_phrases = [
-                detailed_music_prompt,
-                "A detailed musical recommendation for this visual scene.",
+            if "Create a detailed musical recommendation" in music_caption:
+                music_caption = music_caption.split("Create a detailed musical recommendation")[-1].strip()
+            
+            unwanted_suffixes = [
                 "stock videos & royalty-free footage",
-                "royalty-free footage",
-                "stock footage",
                 "stock videos",
-                "stock photos",
-                "Write in the style of:",
+                "royalty-free footage",
+                "& royalty-free footage",
+                "videos & royalty-free footage",
+                "stock footage",
+                "royalty-free"
             ]
             
-            for phrase in unwanted_phrases:
-                music_caption = music_caption.replace(phrase, "").strip()
-
-            # Fallback/Refinement logic (kept from original for robust results)
-            if len(music_caption.split()) < 10 or any(generic in music_caption.lower() for generic in ["stock", "footage", "generic", "background"]):
-                music_caption = "Upbeat, driving electronic music with heavy synthesizers, gated drums, and a high-energy, cinematic mood, perfect for an urban setting."
+            for suffix in unwanted_suffixes:
+                if suffix in music_caption:
+                    music_caption = music_caption.replace(suffix, "").strip()
+                    music_caption = music_caption.rstrip(" -").strip()
+            
+            if music_caption.strip() in ["-", "", "india", "india stock", "stock"] or len(music_caption.split()) < 3:
+                direct_prompt = """Create a detailed musical recommendation for this scene. Be very specific about instruments, genre, and mood. Examples: "Upbeat pop dance track with electric guitar, synthesizers, and energetic vocals" or "Acoustic folk music with guitar, violin, and harmonica, creating a warm atmosphere" or "Electronic ambient music with synthesizers, pads, and subtle percussion" or "Jazz fusion with saxophone, piano, and complex rhythms" or "Rock anthem with electric guitars, drums, and powerful vocals, creating an epic cinematic atmosphere"."""
+                
+                direct_inputs = self.processor(images=pil_image, text=direct_prompt, return_tensors="pt").to(self.device)
+                
+                with torch.no_grad():
+                    direct_ids = self.model.generate(
+                        **direct_inputs,
+                        max_new_tokens=100,
+                        num_beams=6,
+                        early_stopping=True,
+                        do_sample=True,
+                        temperature=0.95,
+                        top_p=0.9
+                    )
+                
+                direct_caption = self.processor.batch_decode(
+                    direct_ids, 
+                    skip_special_tokens=True
+                )[0].strip()
+                
+                if len(direct_caption.split()) > 5 and "stock" not in direct_caption.lower():
+                    music_caption = direct_caption
+                else:
+                    music_caption = "Upbeat urban music with electric guitar, drums, and energetic vocals, creating a vibrant street atmosphere"
+            
+            if len(music_caption.split()) < 8 or any(generic in music_caption.lower() for generic in ["crowded street", "street music", "acoustic music", "indian music", "stock", "footage", "generic", "background"]):
+                fallback_prompt = """Describe the perfect music for this scene. Be very specific about genre, instruments, tempo, and mood. Examples: "Upbeat pop dance track with electric guitar, synthesizers, and energetic vocals" or "Acoustic folk music with guitar, violin, and harmonica, creating a warm atmosphere" or "Electronic ambient music with synthesizers, pads, and subtle percussion" or "Jazz fusion with saxophone, piano, and complex rhythms" or "Rock anthem with electric guitars, drums, and powerful vocals, creating an epic cinematic atmosphere"."""
+                
+                fallback_inputs = self.processor(images=pil_image, text=fallback_prompt, return_tensors="pt").to(self.device)
+                
+                with torch.no_grad():
+                    fallback_ids = self.model.generate(
+                        **fallback_inputs,
+                        max_new_tokens=40,
+                        num_beams=6,
+                        early_stopping=True,
+                        do_sample=True,
+                        temperature=0.95,
+                        top_p=0.9
+                    )
+                
+                fallback_caption = self.processor.batch_decode(
+                    fallback_ids, 
+                    skip_special_tokens=True
+                )[0].strip()
+                
+                if len(fallback_caption.split()) > len(music_caption.split()) and "stock" not in fallback_caption.lower() and "generic" not in fallback_caption.lower():
+                    music_caption = fallback_caption
+                else:
+                    music_caption = "Upbeat urban music with electric guitar, drums, bass, and energetic vocals, creating a vibrant street atmosphere"
             
             return music_caption.strip()
             
         except Exception as e:
             print(f"Error generating music caption: {e}")
             return f"Error generating music caption: {e}"
+
         
     def get_detail_score(self,prompt: str) -> float:
         """
@@ -389,7 +429,7 @@ def main():
     parser.add_argument("--output_dir", default="./blip2_output",
                        help="Output directory for results (default: ./blip2_output)")
     # Default changed to the lightweight 'base' model
-    parser.add_argument("--model", default="Salesforce/blip2-flan-t5-base",
+    parser.add_argument("--model", default="Salesforce/blip2-opt-2.7b",
                        help="BLIP2 model name (e.g., Salesforce/blip2-flan-t5-base for lightweight, or blip2-flan-t5-xl). Default: Salesforce/blip2-flan-t5-base")
     
     args = parser.parse_args()
