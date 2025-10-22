@@ -75,7 +75,7 @@ def get_detail_score(prompt: str) -> float:
     # We now return the raw total score, rewarding longer, more descriptive prompts.
     return total_score
 
-def find_most_detailed_prompt(prompts: list[str]) -> tuple[str, float]:
+def find_most_detailed_prompt(results):
     """
     Analyzes an array of prompts to find the one with the highest detail score.
 
@@ -85,62 +85,23 @@ def find_most_detailed_prompt(prompts: list[str]) -> tuple[str, float]:
     Returns:
         A tuple containing the most detailed prompt (string) and its score (float).
     """
-    if not prompts:
+    if not results:
         return ("", 0.0)
+    
 
     max_score = -1.0
     most_detailed_prompt = ""
 
     print("--- Prompt Analysis ---")
-    for prompt in prompts:
-        score = get_detail_score(prompt)
-        print(f"Prompt: '{prompt}'")
+    for re in results:
+        score = get_detail_score(re[2])
+        print(f"Prompt: '{re[2]}'")
         print(f"Detail Score: {score:.2f}")
 
         if score > max_score:
             max_score = score
-            most_detailed_prompt = prompt
+            most_detailed_prompt = re[2]
 
     print("-----------------------")
     return most_detailed_prompt, max_score
 
-if __name__ == "__main__":
-    # --- Example Array of Prompts ---
-    prompt_array = [
-        "Upbeat urban music with electric guitar, drums, and energetic vocals, creating a vibrant street atmosphere",
-        "acoustic folk music with guitar, violin and harmonica, creating a warm, intimate atmosphere",
-        "acoustic folk music with guitar, violin, and harmonica",
-        "Upbeat urban music with electric guitar, drums, bass, and energetic vocals, creating a vibrant street atmosphere",
-        "acoustic folk music with guitar, violin, and harmonica",
-        "Upbeat urban music with electric guitar, drums, bass, and energetic vocals, creating a vibrant street atmosphere",
-        "acoustic folk music with guitar, violin, and harmonica",
-        "Upbeat urban music with electric guitar, drums, bass, and energetic vocals, creating a vibrant street atmosphere",
-        "Upbeat urban music with electric guitar, drums, bass, and energetic vocals, creating a vibrant street atmosphere",
-        "acoustic folk music with guitar, violin and harmonica, creating a warm atmosphere",
-        "acoustic folk music with guitar, violin, and harmonica",
-        "Upbeat urban music with electric guitar, drums, and energetic vocals, creating a vibrant street atmosphere",
-    ]
-
-
-    # --- Execution ---
-    try:
-        best_prompt, score = find_most_detailed_prompt(prompt_array)
-        
-        if best_prompt:
-            print(f"\n✅ Most Detailed Prompt Found (Score: {score:.2f}):")
-            print(f"'{best_prompt}'")
-        else:
-            print("\n⚠️ No prompts provided for analysis.")
-
-    except LookupError as e:
-        print("\n--- ERROR: NLTK Data Missing ---")
-        print("This error means the NLTK data files were not found.")
-        print("Please ensure you have run the following setup commands separately:")
-        print("import nltk")
-        print("nltk.download('punkt')")
-        print("nltk.download('averaged_perceptron_tagger')")
-        # The specific details of the missing resource are helpful for the user
-        print(f"\nDetails: {e}") 
-
-    except Exception as e:
-        print(f"An unexpected error occurred: {e}")
