@@ -44,7 +44,7 @@ class VideoToMusicConverter:
 
         # --- NEW: Load the Sentence Transformer Model ---
         # 'all-MiniLM-L6-v2' is small, fast, and very effective
-        self.st_model_name = 'all-MiniLM-L6-v2'
+        self.st_model_name = "sentence-transformers/all-MiniLM-L6-v2"
         print(f"Loading Sentence Transformer model: {self.st_model_name}")
         try:
             self.st_model = SentenceTransformer(self.st_model_name, device=self.device)
@@ -401,89 +401,74 @@ class VideoToMusicConverter:
         return total_score
 
     
-    # --- MAJOR CHANGE: process_video now handles frame extraction and chunked analysis ---
-    def process_video(self, video_path: str, selector_interval_seconds: int = 5) -> Tuple[List[Tuple[np.ndarray, int, str]], List[Tuple[int, str, float]]]:
+    def process_video(self, video_path: str, selector_interval_seconds: float = 3.5) -> Tuple[List[Tuple[np.ndarray, int, str]], List[Tuple[int, str, float]]]:
         """
-        Process video frame-by-frame, generate music recommendations, and
-        run the 'best prompt selector' every N seconds.
-        
-        Returns a tuple:
-        1. all_results: List of (frame_image, frame_num, caption) for all frames.
-        2. best_prompts_list: List of (frame_num, prompt, score) for the best
-           prompt from each time interval.
+        Process video at 2 frames per second and get best prompt per 3.5-second chunk.
+        Returns:
+            - all_results: list of all processed frames
+            - best_prompts_list: list of best prompts per 3.5-second chunk
         """
-        print(f"Starting video processing...")
-        print(f"Video: {video_path}")
-        print(f"Processing every frame. Running best prompt selector every {selector_interval_seconds} seconds.")
-        print(f"Model: {self.model_name}")
-
         cap = cv2.VideoCapture(video_path)
         if not cap.isOpened():
             raise ValueError(f"Could not open video file: {video_path}")
 
         fps = cap.get(cv2.CAP_PROP_FPS)
         if not fps or fps == 0:
-            print("Warning: Could not get video FPS. Defaulting to 30.")
             fps = 30
-        
-        frames_per_chunk = int(fps * selector_interval_seconds)
-        print(f"Video FPS: {fps:.2f}. Analyzing chunks of {frames_per_chunk} frames.")
+            print("Warning: Could not get FPS, defaulting to 30.")
+
+        # 2 frames per second
+        frame_skip = max(int(fps / 2), 1)  
+
+        # Number of processed frames per chunk (3.5 seconds)
+        frames_per_chunk = int(2 * selector_interval_seconds)  
 
         all_results = []
         best_prompts_list = []
         current_chunk_results = []
-        
-        frame_count = 0
+
+        frame_index = 0
         transition = " Add a 0.5 second smooth transition to/from this music in a soft-fade form."
 
         while True:
             ret, frame = cap.read()
             if not ret:
                 break
-            
-            if frame_count % (int(fps) or 30) == 0: # Print status every second
-                 print(f"Processing video frame {frame_count} (Time: {frame_count/fps:.2f}s)")
 
-            # 1. Process the frame
+            # Skip frames to process only 2 fps
+            if frame_index % frame_skip != 0:
+                frame_index += 1
+                continue
+
             frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
             caption = self.generate_music_caption(frame_rgb)
             caption_with_transition = caption + transition
-            
-            result_data = (frame_rgb, frame_count, caption_with_transition)
-            
-            # 2. Store results
+
+            result_data = (frame_rgb, frame_index, caption_with_transition)
             all_results.append(result_data)
             current_chunk_results.append(result_data)
-            
-            frame_count += 1
 
-            # 3. Check if chunk is complete
-            if frame_count % frames_per_chunk == 0 and current_chunk_results:
-                print(f"\n--- Analyzing chunk ending at frame {frame_count} ({frame_count/fps:.2f}s) ---")
+            # Check if chunk is complete
+            if len(current_chunk_results) >= frames_per_chunk:
                 best_prompt, best_score = self.find_most_detailed_prompt(current_chunk_results)
-                
                 if best_prompt:
-                    # Store (end_frame_num, prompt, score)
-                    best_prompts_list.append((frame_count, best_prompt, best_score))
-                    print(f"✓ Best of chunk: {best_prompt} (Score: {best_score:.2f})\n")
-                
-                # Reset chunk
+                    # Store the best prompt for this chunk
+                    best_prompts_list.append((frame_index, best_prompt, best_score))
+                # Reset the chunk
                 current_chunk_results = []
-        
-        # 4. Process the final remaining chunk
+
+            frame_index += 1
+
+        # Handle final chunk
         if current_chunk_results:
-            print(f"\n--- Analyzing final chunk (frames {frame_count - len(current_chunk_results)} to {frame_count}) ---")
             best_prompt, best_score = self.find_most_detailed_prompt(current_chunk_results)
-            
             if best_prompt:
-                best_prompts_list.append((frame_count, best_prompt, best_score))
-                print(f"✓ Best of final chunk: {best_prompt} (Score: {best_score:.2f})\n")
+                best_prompts_list.append((frame_index, best_prompt, best_score))
 
         cap.release()
-        
-        print(f"Processing complete! Processed {len(all_results)} total frames.")
+        print(f"Processed {len(all_results)} frames, {len(best_prompts_list)} chunks.")
         return all_results, best_prompts_list
-    
+
     def display_results(self, results: List[Tuple[np.ndarray, int, str]], 
                        max_frames: int = 6, save_path: str = None): # <-- Changed default to 6
         """Display frames with their music recommendations and wrapped titles"""
@@ -547,7 +532,7 @@ class VideoToMusicConverter:
             plt.savefig(save_path, dpi=300, bbox_inches='tight')
             print(f"Visualization saved to: {save_path}")
         
-        plt.show()
+        #plt.show()
     
     def save_captions_to_file(self, results: List[Tuple[np.ndarray, int, str]], 
                             output_path: str):
@@ -606,7 +591,7 @@ def main():
     parser.add_argument("video_path", help="Path to the input video file")
     
     # --- CHANGE: Removed frame_interval, added selector_interval ---
-    parser.add_argument("--selector_interval", type=int, default=5, 
+    parser.add_argument("--selector_interval", type=int, default=3.5, 
                        help="Run the best prompt selector every N seconds (default: 5)")
     
     parser.add_argument("--max_display", type=int, default=12,
@@ -661,7 +646,7 @@ def main():
     print(f"Processing complete! Results saved in: {args.output_dir}")
 
     # Return the list of best prompts
-    return best_prompts_list
+    return [prompt[1] for prompt in best_prompts_list]
 
 
 if __name__ == "__main__":

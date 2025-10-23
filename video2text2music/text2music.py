@@ -1,10 +1,16 @@
 import torch
 import torchaudio
-#from audiocraft.models import MusicGen
-#from audiocraft.data.audio import audio_write
-from main import video2text
+import sys
+from audiocraft.models import MusicGen
+from audiocraft.data.audio import audio_write
+import blipvideo2text
 
 from moviepy.editor import VideoFileClip, AudioFileClip
+
+import nltk
+nltk.download('punkt_tab')
+nltk.download('averaged_perceptron_tagger')
+nltk.download('averaged_perceptron_tagger_eng')
 
 def add_music(text_descriptions, video, segment_duration=5):
     model = MusicGen.get_pretrained('facebook/musicgen-small')
@@ -20,7 +26,7 @@ def add_music(text_descriptions, video, segment_duration=5):
     final_audio = torch.cat(audio_segments, dim=1)
 
     audio_write("generated", wav = final_audio, sample_rate=model.sample_rate)
-    
+    overlay_video_with_audio(video, "generated.wav")
 
 def overlay_video_with_audio(video, audio):
     video_clip = VideoFileClip(video)
@@ -32,11 +38,16 @@ def overlay_video_with_audio(video, audio):
     video_clip.write_videofile(output_path)
 
 
-overlay_video_with_audio('vid1.mp4', 'generated.wav')
-text_descriptions = video2text.main("vid1.mp4")
+sys.argv = [
+    "video_to_music.py",
+    "transition_vid.mp4"
+]
+#text_descriptions = blipvideo2text.main()
+text_descriptions = ['A soaring, heroic orchestral score. Builds with powerful soaring strings and a triumphant choir, perfect for an epic, adventurous shot of a waterfall in the middle of a forest. Add a 0.5 second smooth transition to/from this music in a soft-fade form.', 'A soaring, heroic orchestral score. Builds with powerful soaring strings and a triumphant choir, perfect for an epic, adventurous shot of a waterfall in the middle of a forest. Add a 0.5 second smooth transition to/from this music in a soft-fade form.', 'A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of a black and white photo of a city street. Add a 0.5 second smooth transition to/from this music in a soft-fade form.', 'A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of a black and white photo of two people on a city street. Add a 0.5 second smooth transition to/from this music in a soft-fade form.', 'A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of a black and white image of a man walking down the street. Add a 0.5 second smooth transition to/from this music in a soft-fade form.']
+print(text_descriptions)
 #text_descriptions = ["rock music", "energetic EDM", "sad jazz"] # get from video2text
-video_file = "vid1.mp4"
-add_music(text_descriptions, video_file)
+video_file = "transition_vid.mp4"
+add_music(text_descriptions, video_file, 3.5)
 
 
 """
