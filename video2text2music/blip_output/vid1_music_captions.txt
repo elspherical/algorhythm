@@ -4,41 +4,1055 @@ This file contains music recommendations for each video frame.
 Each recommendation includes genre, mood, tempo, and instrumentation suggestions.
 
 Model: Salesforce/blip-image-captioning-base
-Total frames processed: 12
+Total frames processed: 350
 
 Frame 0 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 1 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 2 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 3 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 4 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 5 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 6 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 7 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 8 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 9 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 10 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 11 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 12 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 13 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 14 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 15 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 16 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 17 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 18 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 19 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 20 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 21 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 22 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 23 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 24 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking down it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 25 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 26 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 27 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 28 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 29 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 30 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 31 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 32 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 33 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 34 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 35 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 36 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 37 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 38 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 39 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 40 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 41 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 42 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 43 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 44 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 45 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 46 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 47 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 48 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 49 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 50 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 51 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 52 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 53 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 54 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 55 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 56 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 57 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 58 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 59 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 60 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 61 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 62 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 63 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 64 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 65 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 66 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 67 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 68 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 69 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 70 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 71 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 72 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 73 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 74 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 75 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 76 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through a crowded street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 77 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 78 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 79 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 80 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 81 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 82 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 83 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 84 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 85 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 86 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people walking through a crowded street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 87 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 88 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 89 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
 Frame 90 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 91 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 92 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 93 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 94 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 95 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 96 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 97 - Music Recommendation:
+A vibrant, high-energy Bollywood track. Combines traditional soaring strings with modern pop production for a dramatic, colorful, and celebratory scene like people are walking through a crowded street in india. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 98 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of a crowded street with many people walking through it. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 99 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 100 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 101 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 102 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 103 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 104 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 105 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 106 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people walking down a narrow street in a city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 107 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 108 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 109 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 110 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 111 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 112 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 113 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 114 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 115 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 116 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 117 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 118 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 119 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 120 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 121 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 122 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 123 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 124 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 125 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 126 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 127 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 128 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 129 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 130 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 131 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 132 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 133 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 134 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 135 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 136 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 137 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 138 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 139 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 140 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 141 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 142 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 143 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 144 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 145 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 146 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 147 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 148 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 149 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 150 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 151 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 152 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 153 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 154 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 155 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 156 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 157 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 158 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 159 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 160 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 161 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 162 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 163 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 164 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 165 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 166 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 167 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 168 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 169 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 170 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 171 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 172 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 173 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 174 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 175 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 176 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 177 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 178 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 179 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
 Frame 180 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 181 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 182 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 183 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 184 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 185 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 186 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 187 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 188 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 189 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 190 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 191 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 192 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 193 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 194 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 195 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 196 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 197 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 198 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 199 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 200 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 201 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 202 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 203 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 204 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 205 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 206 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 207 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 208 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 209 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 210 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 211 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 212 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 213 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 214 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 215 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 216 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 217 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 218 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 219 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 220 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 221 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 222 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 223 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 224 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 225 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 226 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 227 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 228 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 229 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 230 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 231 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 232 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 233 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 234 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 235 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 236 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 237 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 238 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 239 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
 Frame 240 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 241 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 242 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 243 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 244 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 245 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 246 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 247 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 248 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 249 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 250 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 251 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 252 - Music Recommendation:
+A soft, gentle acoustic folk piece with a a gentle piano. A thoughtful and minimalist background, ideal for this calm moment of people are walking down the street in a busy market. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 253 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 254 - Music Recommendation:
+A vibrant, high-energy Bollywood track. Combines traditional soaring strings with modern pop production for a dramatic, colorful, and celebratory scene like people walking down a busy street in india. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 255 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 256 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 257 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 258 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 259 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 260 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 261 - Music Recommendation:
+A vibrant, high-energy Bollywood track. Combines traditional soaring strings with modern pop production for a dramatic, colorful, and celebratory scene like people are walking down a busy street in india. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 262 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 263 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 264 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 265 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 266 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 267 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 268 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 269 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 270 - Music Recommendation:
 A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 271 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 272 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 273 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 274 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 275 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 276 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 277 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 278 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 279 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the evening. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 280 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 281 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 282 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 283 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 284 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 285 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 286 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 287 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 288 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 289 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 290 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 291 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 292 - Music Recommendation:
+A vibrant, high-energy Bollywood track. Combines traditional soaring strings with modern pop production for a dramatic, colorful, and celebratory scene like people walking down a narrow street in india. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 293 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 294 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 295 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 296 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 297 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 298 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 299 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
 Frame 300 - Music Recommendation:
 A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 
+Frame 301 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 302 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 303 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in an alley. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 304 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 305 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 306 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 307 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down a narrow street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 308 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 309 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 310 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 311 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 312 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 313 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 314 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking through an alley in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 315 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 316 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 317 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 318 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 319 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 320 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 321 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 322 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 323 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 324 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 325 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 326 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 327 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 328 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 329 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
 Frame 330 - Music Recommendation:
 A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 331 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 332 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 333 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 334 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 335 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 336 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 337 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 338 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 339 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 340 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 341 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 342 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 343 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 344 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 345 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 346 - Music Recommendation:
+A confident, thoughtful hip-hop beat with a strong rhythmic groove and a soaring strings sample. Fits the cool, urban energy of people are walking down the street in a crowded area. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 347 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 348 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
+
+Frame 349 - Music Recommendation:
+A high-energy, driving electronic track with a fast tempo (120-130 BPM) and layered synth melodies. Perfect for a dynamic scene of people are walking down a busy street in the city. Add a 0.5 second smooth transition to/from this music in a soft-fade form.
 

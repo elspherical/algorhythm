@@ -3,7 +3,7 @@ Video to Music Recommendations using Optimized BLIP (V1)
 Generates detailed musical recommendations for video frames efficiently.
 
 To run this script, you will need to install:
-pip install opencv-python transformers torch Pillow matplotlib nltk
+pip install opencv-python transformers torch Pillow matplotlib nltk sentence-transformers
 (BLIP V1 is simpler and does not require 'accelerate' or 'bitsandbytes')
 """
 
@@ -13,6 +13,7 @@ from PIL import Image
 import numpy as np
 import matplotlib.pyplot as plt
 import os
+import textwrap
 from typing import List, Tuple
 import argparse
 import nltk
@@ -226,6 +227,7 @@ class VideoToMusicConverter:
         """
         Finds the best music profile by comparing semantic embeddings.
         """
+        # print(factual_caption) # <-- This is too verbose for every frame
         # 1. Encode the factual caption from BLIP
         caption_embedding = self.st_model.encode(factual_caption, convert_to_tensor=True, device=self.device)
         
@@ -238,7 +240,7 @@ class VideoToMusicConverter:
         best_profile = self.music_profiles[best_match_index]
         best_score = cosine_scores[best_match_index].item()
 
-        print(f"  [Semantic Match: '{best_profile['id']}' (Score: {best_score:.2f})]")
+        # print(f"  [Semantic Match: '{best_profile['id']}' (Score: {best_score:.2f})]") # <-- Too verbose
         
         # 4. Populate the template
         # This is where we can add simple dynamic elements back in
@@ -291,42 +293,9 @@ class VideoToMusicConverter:
             print(f"Error loading BLIP model: {e}")
             raise RuntimeError(f"Failed to load BLIP model: {e}")
     
-    def extract_frames(self, video_path: str, frame_interval: int = 30) -> List[Tuple[np.ndarray, int]]:
-        """Extract frames from video at specified intervals"""
-        print(f"Extracted frames from: {video_path}")
-        
-        cap = cv2.VideoCapture(video_path)
-        if not cap.isOpened():
-            raise ValueError(f"Could not open video file: {video_path}")
-        
-        frames = []
-        frame_count = 0
-        extracted_count = 0
-        
-        # Get frame rate (FPS) for logging
-        fps = cap.get(cv2.CAP_PROP_FPS)
-        
-        print(f"Video FPS: {fps:.2f}. Extracting 1 frame every {frame_interval} frames ({frame_interval/fps:.2f} seconds).")
-
-        while True:
-            ret, frame = cap.read()
-            if not ret:
-                break
-            
-            if frame_count % frame_interval == 0:
-                frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
-                frames.append((frame_rgb, frame_count))
-                extracted_count += 1
-                
-                if extracted_count % 10 == 0:
-                    print(f"Extracted {extracted_count} frames...")
-            
-            frame_count += 1
-        
-        cap.release()
-        
-        print(f"Total frames extracted: {len(frames)} from {frame_count} total frames")
-        return frames
+    # --- METHOD REMOVED ---
+    # def extract_frames(self, video_path: str, frame_interval: int = 30) -> List[Tuple[np.ndarray, int]]:
+    # This logic is now merged into process_video
     
     def generate_music_caption(self, image: np.ndarray) -> str:
         """
@@ -432,66 +401,145 @@ class VideoToMusicConverter:
         return total_score
 
     
-    def process_video(self, video_path: str, frame_interval: int = 30) -> List[Tuple[np.ndarray, int, str]]:
-        """Process video and generate music recommendations for each frame"""
+    # --- MAJOR CHANGE: process_video now handles frame extraction and chunked analysis ---
+    def process_video(self, video_path: str, selector_interval_seconds: int = 5) -> Tuple[List[Tuple[np.ndarray, int, str]], List[Tuple[int, str, float]]]:
+        """
+        Process video frame-by-frame, generate music recommendations, and
+        run the 'best prompt selector' every N seconds.
+        
+        Returns a tuple:
+        1. all_results: List of (frame_image, frame_num, caption) for all frames.
+        2. best_prompts_list: List of (frame_num, prompt, score) for the best
+           prompt from each time interval.
+        """
         print(f"Starting video processing...")
         print(f"Video: {video_path}")
-        print(f"Frame sampling: every {frame_interval} frames")
+        print(f"Processing every frame. Running best prompt selector every {selector_interval_seconds} seconds.")
         print(f"Model: {self.model_name}")
+
+        cap = cv2.VideoCapture(video_path)
+        if not cap.isOpened():
+            raise ValueError(f"Could not open video file: {video_path}")
+
+        fps = cap.get(cv2.CAP_PROP_FPS)
+        if not fps or fps == 0:
+            print("Warning: Could not get video FPS. Defaulting to 30.")
+            fps = 30
         
-        frames = self.extract_frames(video_path, frame_interval)
+        frames_per_chunk = int(fps * selector_interval_seconds)
+        print(f"Video FPS: {fps:.2f}. Analyzing chunks of {frames_per_chunk} frames.")
+
+        all_results = []
+        best_prompts_list = []
+        current_chunk_results = []
         
-        print(f"Generating music recommendations for frames...")
-        results = []
+        frame_count = 0
         transition = " Add a 0.5 second smooth transition to/from this music in a soft-fade form."
-        
-        for i, (frame, frame_num) in enumerate(frames):
-            print(f"Processing frame {i+1}/{len(frames)} (video frame {frame_num})")
+
+        while True:
+            ret, frame = cap.read()
+            if not ret:
+                break
             
-            caption = self.generate_music_caption(frame)
-            results.append((frame, frame_num, caption+transition))
-            print(f"Music recommendation: {caption}")
+            if frame_count % (int(fps) or 30) == 0: # Print status every second
+                 print(f"Processing video frame {frame_count} (Time: {frame_count/fps:.2f}s)")
+
+            # 1. Process the frame
+            frame_rgb = cv2.cvtColor(frame, cv2.COLOR_BGR2RGB)
+            caption = self.generate_music_caption(frame_rgb)
+            caption_with_transition = caption + transition
+            
+            result_data = (frame_rgb, frame_count, caption_with_transition)
+            
+            # 2. Store results
+            all_results.append(result_data)
+            current_chunk_results.append(result_data)
+            
+            frame_count += 1
+
+            # 3. Check if chunk is complete
+            if frame_count % frames_per_chunk == 0 and current_chunk_results:
+                print(f"\n--- Analyzing chunk ending at frame {frame_count} ({frame_count/fps:.2f}s) ---")
+                best_prompt, best_score = self.find_most_detailed_prompt(current_chunk_results)
+                
+                if best_prompt:
+                    # Store (end_frame_num, prompt, score)
+                    best_prompts_list.append((frame_count, best_prompt, best_score))
+                    print(f"✓ Best of chunk: {best_prompt} (Score: {best_score:.2f})\n")
+                
+                # Reset chunk
+                current_chunk_results = []
         
-        print(f"Processing complete! Processed {len(results)} frames")
-        return results
+        # 4. Process the final remaining chunk
+        if current_chunk_results:
+            print(f"\n--- Analyzing final chunk (frames {frame_count - len(current_chunk_results)} to {frame_count}) ---")
+            best_prompt, best_score = self.find_most_detailed_prompt(current_chunk_results)
+            
+            if best_prompt:
+                best_prompts_list.append((frame_count, best_prompt, best_score))
+                print(f"✓ Best of final chunk: {best_prompt} (Score: {best_score:.2f})\n")
+
+        cap.release()
+        
+        print(f"Processing complete! Processed {len(all_results)} total frames.")
+        return all_results, best_prompts_list
     
     def display_results(self, results: List[Tuple[np.ndarray, int, str]], 
-                       max_frames: int = 12, save_path: str = None):
-        """Display frames with their music recommendations"""
-        display_results = results[:max_frames]
+                       max_frames: int = 6, save_path: str = None): # <-- Changed default to 6
+        """Display frames with their music recommendations and wrapped titles"""
+        
+        # --- CHANGE 1: Select frames and set grid ---
+        # We'll use a 3-column grid by default.
+        
+        # --- NEW: Select frames more intelligently for visualization ---
+        # If we have many results, space them out instead of just taking the first 6
+        if len(results) > max_frames:
+            indices = np.linspace(0, len(results) - 1, max_frames, dtype=int)
+            display_results = [results[i] for i in indices]
+        else:
+            display_results = results
+        
         n_frames = len(display_results)
         cols = 3
-        rows = (n_frames + cols - 1) // cols
         
-        # Only create subplots if there are results
+        # Handle case where we have fewer frames than columns
         if n_frames == 0:
             print("No frames processed to display.")
             return
-
-        fig, axes = plt.subplots(rows, cols, figsize=(15, 5 * rows))
-        
-        # Flatten axes array for easy iteration, handling cases where rows/cols is 1
-        if rows == 1 and cols > 1:
-            axes = axes.reshape(1, -1)
-        elif cols == 1 and rows > 1:
-            axes = axes.reshape(-1, 1)
-        elif rows == 1 and cols == 1:
-            axes = np.array([[axes]])
-
-        
-        for i, (frame, frame_num, caption) in enumerate(display_results):
-            row = i // cols
-            col = i % cols
+        elif n_frames < cols:
+            cols = n_frames
             
-            axes[row, col].imshow(frame)
-            axes[row, col].set_title(f"Frame {frame_num}\n{caption}", fontsize=10)
-            axes[row, col].axis('off')
+        # Calculate rows, ensuring at least 1 row
+        rows = (n_frames + cols - 1) // cols
+        
+        # --- CHANGE 2: Adjust figsize to give titles more vertical space ---
+        # Increased from 5 to 7 per row to make room for wrapped text
+        fig, axes = plt.subplots(rows, cols, figsize=(15, 7 * rows))
+        
+        # --- CHANGE 3: Simplify subplot handling with .flatten() ---
+        # This works for all cases (1 plot, 1 row, 1 col, or grid)
+        if n_frames == 1:
+            axes_flat = [axes] # Make it iterable if it's a single plot
+        else:
+            axes_flat = axes.flatten()
+
+        for i, (frame, frame_num, caption) in enumerate(display_results):
+            
+            # --- CHANGE 4: Wrap the caption text ---
+            # We use textwrap.fill() to automatically add newlines
+            # 60 characters is a good width for a 5-inch wide plot
+            wrapped_caption = textwrap.fill(caption, width=60)
+            
+            ax = axes_flat[i]
+            ax.imshow(frame)
+            
+            # Use the new wrapped_caption and slightly smaller font
+            ax.set_title(f"Frame {frame_num}\n{wrapped_caption}", fontsize=9)
+            ax.axis('off')
         
         # Turn off unused subplots
-        for i in range(n_frames, rows * cols):
-            row = i // cols
-            col = i % cols
-            axes[row, col].axis('off')
+        for i in range(n_frames, len(axes_flat)):
+            axes_flat[i].axis('off')
         
         plt.tight_layout()
         
@@ -519,12 +567,12 @@ class VideoToMusicConverter:
         
         print(f"Music recommendations saved to: {output_path}")
 
-    def find_most_detailed_prompt(self,results):
+    def find_most_detailed_prompt(self,results: List[Tuple[np.ndarray, int, str]]):
         """
-        Analyzes an array of prompts to find the one with the highest detail score.
+        Analyzes a list of result tuples to find the one with the highest detail score.
 
         Args:
-            prompts: A list of string prompts to analyze.
+            results: A list of (frame, frame_num, prompt) tuples.
 
         Returns:
             A tuple containing the most detailed prompt (string) and its score (float).
@@ -532,21 +580,21 @@ class VideoToMusicConverter:
         if not results:
             return ("", 0.0)
         
-
         max_score = -1.0
         most_detailed_prompt = ""
 
-        print("--- Prompt Analysis ---")
+        # print("--- Prompt Analysis (Chunk) ---") # <-- Too verbose
         for frame_data in results:
-            score = self.get_detail_score(frame_data[2])
-            print(f"Prompt: '{frame_data[2]}'")
-            print(f"Detail Score: {score:.2f}")
+            prompt_text = frame_data[2]
+            score = self.get_detail_score(prompt_text)
+            # print(f"Prompt: '{prompt_text}'") # <-- Too verbose
+            # print(f"Detail Score: {score:.2f}") # <-- Too verbose
 
             if score > max_score:
                 max_score = score
-                most_detailed_prompt = frame_data[2]
+                most_detailed_prompt = prompt_text
 
-        print("-----------------------")
+        # print("-----------------------")
         return most_detailed_prompt, max_score
 
 
@@ -556,10 +604,13 @@ class VideoToMusicConverter:
 def main():
     parser = argparse.ArgumentParser(description="Generate music recommendations for video using BLIP") # Changed BLIP2 to BLIP
     parser.add_argument("video_path", help="Path to the input video file")
-    parser.add_argument("--frame_interval", type=int, default=30, 
-                       help="Extract every Nth frame (default: 30)")
+    
+    # --- CHANGE: Removed frame_interval, added selector_interval ---
+    parser.add_argument("--selector_interval", type=int, default=5, 
+                       help="Run the best prompt selector every N seconds (default: 5)")
+    
     parser.add_argument("--max_display", type=int, default=12,
-                       help="Maximum frames to display (default: 12)")
+                       help="Maximum frames to display in visualization (default: 12)")
     parser.add_argument("--output_dir", default="./blip_output", # Changed blip2_output to blip_output
                        help="Output directory for results (default: ./blip_output)")
     
@@ -575,27 +626,42 @@ def main():
     converter = VideoToMusicConverter(model_name=args.model)
     
     print("Starting video processing...")
-    results = converter.process_video(args.video_path, args.frame_interval)
-
+    
+    # --- CHANGE: Updated process_video call to new signature ---
+    all_results, best_prompts_list = converter.process_video(
+        args.video_path, 
+        args.selector_interval
+    )
   
     
-    if not results:
+    if not all_results:
         print("No results were generated. Exiting.")
         return
         
     video_name = os.path.splitext(os.path.basename(args.video_path))[0]
     captions_file = os.path.join(args.output_dir, f"{video_name}_music_captions.txt")
-    converter.save_captions_to_file(results, captions_file)
+    
+    # --- CHANGE: Use all_results for saving and display ---
+    converter.save_captions_to_file(all_results, captions_file)
     
     visualization_path = os.path.join(args.output_dir, f"{video_name}_music_visualization.png")
-    converter.display_results(results, max_frames=args.max_display, 
+    converter.display_results(all_results, max_frames=args.max_display, 
                             save_path=visualization_path)
     
-    top_prompt = converter.find_most_detailed_prompt(results)
+    # --- CHANGE: Removed old top_prompt analysis, print list instead ---
+    print("\n" + "="*30)
+    print(f" BEST PROMPT FROM EACH {args.selector_interval}-SECOND CHUNK ")
+    print("="*30)
+    if not best_prompts_list:
+        print("No prompts were generated.")
+    else:
+        for (frame_num, prompt, score) in best_prompts_list:
+            print(f"[Chunk ending at frame ~{frame_num}] (Score: {score:.2f}):\n{prompt}\n")
     
     print(f"Processing complete! Results saved in: {args.output_dir}")
 
-    return top_prompt
+    # Return the list of best prompts
+    return best_prompts_list
 
 
 if __name__ == "__main__":
