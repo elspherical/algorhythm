@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Algorhythm</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #fdf6f0; /* soft pastel cream */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    padding: 50px 20px;
+    color: #4d4d4d;
+  }
+
+  h1 {
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #7d6caa; /* pastel purple */
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 1000px;
+    flex-wrap: wrap;
+    align-items: flex-start;
+  }
+
+  .box {
+    flex: 1;
+    min-width: 280px;
+    border-radius: 12px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 6px 15px rgba(125, 105, 170, 0.1); /* subtle pastel shadow */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .video-box {
+    max-width: 480px;
+  }
+
+  video {
+    border-radius: 12px;
+    width: 100%;
+    background-color: #ffffff;
+    margin-bottom: 15px;
+  }
+
+  #timer {
+    font-size: 26px;
+    font-weight: 600;
+    font-family: monospace;
+    margin-bottom: 15px;
+    color: #7d6caa; /* pastel purple */
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .controls {
+    display: flex;
+    gap: 10px;
+  }
+
+  button {
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(125, 105, 170, 0.05);
+    margin: 5px;
+  }
+
+  #startBtn {
+    background-color: #a8dadc; /* pastel teal */
+    color: #2c2c2c;
+  }
+
+  #startBtn:hover {
+    background-color: #91c8ca;
+  }
+
+  #stopBtn {
+    background-color: #ffb3b3; /* pastel pink */
+    color: #2c2c2c;
+  }
+
+  #stopBtn:hover {
+    background-color: #ff9999;
+  }
+
+  #uploadBtn {
+    background-color: #ffe5b4; /* pastel peach */
+    color: #2c2c2c;
+    padding: 16px 32px;
+    font-size: 18px;
+  }
+
+  #uploadBtn:hover {
+    background-color: #ffd58a;
+  }
+
+  .or {
+    font-weight: 600;
+    color: #b3a7c6; /* soft pastel gray-purple */
+    align-self: center;
+    margin: 0 10px;
+    font-size: 20px;
+  }
+
+  .recording-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #ff7f7f; /* soft red-pink */
+    animation: blink 1s infinite;
+    display: inline-block;
+  }
+
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.2; }
+  }
+
+  .upload-box {
+    max-width: 480px;
+    height: 400px;
+    justify-content: center;
+  }
+
+  #loading {
+    display: none;
+    font-size: 24px;
+    font-weight: 600;
+    color: #7d6caa; /* pastel purple */
+    margin-top: 20px;
+  }
+
+  #resultVideos {
+    display: none;
+    margin-top: 30px;
+    gap: 30px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+
+  @media (max-width: 900px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .or {
+      margin: 15px 0;
+    }
+
+    .upload-box {
+      height: auto;
+    }
+  }
+</style>
+
+</head>
+<body>
+  <h1>Algorhythm</h1>
+
+  <div class="container">
+    <div class="box video-box">
+      <video id="preview" autoplay muted></video>
+      <div id="timer">00:00</div>
+      <div class="controls">
+        <button id="startBtn">Start Recording</button>
+        <button id="stopBtn" disabled>Stop Recording</button>
+      </div>
+    </div>
+
+    <span class="or">OR</span>
+
+    <div class="box upload-box">
+      <input type="file" id="fileInput" accept="video/*" hidden>
+      <button id="uploadBtn">Upload Video</button>
+    </div>
+  </div>
+
+  <div id="loading">Running model on your video...</div>
+
+  <div id="resultVideos">
+    <div class="box video-box">
+      <h3>Original Video</h3>
+      <video id="originalVideo" controls></video>
+    </div>
+    <div class="box video-box">
+      <h3>Processed Video</h3>
+      <video id="processedVideo" controls></video>
+    </div>
+  </div>
+
+  <script>
+    let mediaRecorder;
+    let recordedChunks = [];
+    let timerInterval;
+    let secondsElapsed = 0;
+
+    const preview = document.getElementById('preview');
+    const startBtn = document.getElementById('startBtn');
+    const stopBtn = document.getElementById('stopBtn');
+    const timer = document.getElementById('timer');
+    const fileInput = document.getElementById('fileInput');
+    const uploadBtn = document.getElementById('uploadBtn');
+    const loading = document.getElementById('loading');
+    const resultVideos = document.getElementById('resultVideos');
+    const originalVideo = document.getElementById('originalVideo');
+    const processedVideo = document.getElementById('processedVideo');
+
+    function updateTimer() {
+      secondsElapsed++;
+      const minutes = String(Math.floor(secondsElapsed / 60)).padStart(2, '0');
+      const seconds = String(secondsElapsed % 60).padStart(2, '0');
+      timer.textContent = `${minutes}:${seconds} `;
+    }
+
+    function startTimer() {
+      secondsElapsed = 0;
+      timer.textContent = "00:00 ";
+      timerInterval = setInterval(updateTimer, 1000);
+    }
+
+    function stopTimer() {
+      clearInterval(timerInterval);
+    }
+
+    let currentOutput = '';
+
+    async function sendVideo(blob) {
+      loading.style.display = 'block';
+      resultVideos.style.display = 'none';
+
+      const formData = new FormData();
+      formData.append('video', blob, 'video.mp4');
+
+      const res = await fetch('/upload', { method: 'POST', body: formData }).then(r => r.json());
+      currentOutput = res.output;  // store unique processed file
+      pollResult();
+    }
+
+    async function pollResult() {
+      const interval = setInterval(async () => {
+        const res = await fetch('/status').then(r => r.json());
+        if (!res.processing) {
+          clearInterval(interval);
+          const result = await fetch('/result').then(r => r.json());
+          if (result.ready) {
+            loading.style.display = 'none';
+            resultVideos.style.display = 'flex';
+
+            const timestamp = new Date().getTime();
+            originalVideo.src = '/videos/' + result.original + '?t=' + timestamp;
+            processedVideo.src = '/videos/' + currentOutput + '?t=' + timestamp;
+          }
+        }
+      }, 1000);
+    }
+    function uploadVideo(file) {
+      sendVideo(file);
+    }
+
+    navigator.mediaDevices.getUserMedia({ video: true, audio: true })
+      .then(stream => {
+        preview.srcObject = stream;
+        mediaRecorder = new MediaRecorder(stream);
+
+        mediaRecorder.ondataavailable = e => {
+          if (e.data.size > 0) recordedChunks.push(e.data);
+        };
+
+        mediaRecorder.onstop = () => {
+          stopTimer();
+
+          const mime = mediaRecorder.mimeType || "video/webm";
+          const blob = new Blob(recordedChunks, { type: mime });
+
+          console.log("Recorded MIME:", mime);
+          console.log("Blob size:", blob.size);
+
+          recordedChunks = [];
+
+          // --- ⬇️ SAVE LOCAL COPY OF THE RECORDING ---
+          const url = URL.createObjectURL(blob);
+          const a = document.createElement("a");
+          a.style.display = "none";
+          a.href = url;
+          a.download = "recorded_video.webm";  // Chrome uses webm
+          document.body.appendChild(a);
+          a.click();
+          URL.revokeObjectURL(url);
+          // --- ⬆️ SAVE LOCAL COPY OF THE RECORDING ---
+
+          uploadVideo(blob);
+
+          startBtn.disabled = false;
+          startBtn.style.backgroundColor = '#a8dadc';
+          startBtn.style.color = '#1a1a1a';
+
+          stopBtn.disabled = true;
+
+          const dot = document.querySelector('.recording-dot');
+          if (dot) dot.remove();
+        };
+      })
+      .catch(err => console.error("Error accessing camera:", err));
+
+    startBtn.onclick = () => {
+      if (!mediaRecorder) return;
+      mediaRecorder.start();
+      startTimer();
+
+      startBtn.disabled = true;
+      startBtn.style.backgroundColor = '#d3d3d3';
+      startBtn.style.color = '#7a7a7a';
+
+      stopBtn.disabled = false;
+      stopBtn.style.backgroundColor = '#ffb3b3';
+      stopBtn.style.color = '#1a1a1a';
+
+      if (!document.querySelector('.recording-dot')) {
+        const dot = document.createElement('span');
+        dot.classList.add('recording-dot');
+        timer.appendChild(dot);
+      }
+    };
+
+    stopBtn.onclick = () => {
+      if (!mediaRecorder) return;
+      mediaRecorder.stop();
+    };
+
+    uploadBtn.onclick = () => {
+      fileInput.click();
+    };
+
+    fileInput.onchange = () => {
+      if (!fileInput.files.length) return;
+      const file = fileInput.files[0];
+      uploadVideo(file);
+    };
+  </script>
+</body>
+</html>
